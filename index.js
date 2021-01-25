@@ -210,7 +210,7 @@ client.on('group-participants-update', async (anu) => {
 				case 'menu':
 					client.sendMessage(from, help(prefix), text)
 					break
-               case 'CRICRI: 
+               case 'Cricrir: 
 				case 'cricri':
 					client.sendMessage(from, criador(prefix), text)
 					break
