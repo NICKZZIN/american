@@ -107,7 +107,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `oiee @${num.split('@')[0]}\ seja bem vindo/a ao grupo *${mdata.subject}* comportasse para nao ganha ban`
+				teks = `Fala fioti @${num.split('@')[0]}\ seja bem vindo/a ao grupor *${mdata.subject}* comportasse para num ganhares ban`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -117,7 +117,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `xauu pessoa @${num.split('@')[0]} quem sabe possa voltar`
+				teks = `Flwz pessoa @${num.split('@')[0]} quem sabe possa morrer no inferno`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -152,18 +152,18 @@ client.on('group-participants-update', async (anu) => {
 			const isCmd = body.startsWith(prefix)
 
 			mess = {
-				wait: '❬❗❭Pera ai, blz tio?❬❗❭',
-				success: '️❬ ✔ ❭ Pronto meu principe🖤',
+				wait: '🥀Pera ai, blz ?🥀',
+				success: '️Pronto meu prinzipe/princeza🖤',
 				error: {
-					stick: 'Eu falhei :( diculpa',
+					stick: '🩸Eu falhei :( diculpa🩸',
 					Iv: 'Diculpa, o link está inválido☹️'
 				},
 				only: {
-					group: '❬❗❭ COMANDO SÓ PODE SER EXECUTADO EM GRUPOS❬❗❭ ',
-					ownerG: '❬❗❭ COMANDO EXCLUSIVO PARA O PROPRIETÁRIO DO BOT.❬❗❭ ',
-					ownerB: '❬❗❭  COMANDO EXCLUSIVO PARA O PROPRIETÁRIO DO BOT.❬❗❭  ',
-					admin: ' ❬ ⚠️ ❭ COMANDO PERMITIDO SOMENTE PARA ADMS ❬ ⚠️ ❭ ',
-					Badmin: '❬❗❭O BOT PRECISA SER ADEMAR ;3 '
+					group: '❗ COMANDO SÓ PODE SER EXECUTADO EM GRUPOS❗ ',
+					ownerG: '❗COMANDO EXCLUSIVO PARA O PROPRIETÁRIO DO BOT.❗ ',
+					ownerB: '❗  COMANDO EXCLUSIVO PARA O PROPRIETÁRIO DO BOT.❗ ',
+					admin: ' ⚠️  COMANDO PERMITIDO SOMENTE PARA ADMS ⚠️ ',
+					Badmin: '❗O BOT PRECISA SER ADEMAR ;3 '
 				}
 			}
 
@@ -210,8 +210,8 @@ client.on('group-participants-update', async (anu) => {
 				case 'menu':
 					client.sendMessage(from, help(prefix), text)
 					break
-                case 'criad0': 
-				case 'criador':
+               case 'CRICRI: 
+				case 'cricri':
 					client.sendMessage(from, criador(prefix), text)
 					break
 				case 'donasi':
@@ -221,7 +221,7 @@ client.on('group-participants-update', async (anu) => {
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `nome do bot : ${me.name}\n*numero do bot* : @${me.jid.split('@')[0]}\n*sigla dos comandos* : ${prefix}\nnumeros bloqueados : ${blocked.length}\no bot esta ativo desde : ${kyun(uptime)}\n`
+					teks = `Nome Do Bot : ${me.name}\n Numero Do Bot : @${me.jid.split('@')[0]}\n Sigla Dos Comandos : ${prefix}\n Numeros Bloqueados : ${blocked.length}\n O Bot Esta Ativo Desde : ${kyun(uptime)}\n`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
@@ -277,7 +277,7 @@ case 'lofi':
                          contextInfo: {mentionedJid: [nomor]},
                      }
                     client.sendMessage('5512997277680@s.whatsapp.net', options, text, {quoted: mek})
-                    reply('PDP PARSA, BUG FOI REPORTADO, SE FOR MENTIRA VAI SER COBRADO🙄✌🏼')
+                    reply('PDP PARZA, BUG FOI REPORTADO, SE FOR MENTIRA VAI SER COBRADO🙄✌🏼')
                     break
 					case 'marcar':
 					members_id = []
@@ -344,7 +344,7 @@ case 'lofi':
 					client.sendMessage(from, buffer, video, {mimetype: 'video/mp4', filename: `${anu.title}.mp4`, quoted: mek})
 					break
                 case 'logo3d':
-              	    if (args.length < 1) return reply('qual txt principe??')
+              	    if (args.length < 1) return reply('qual txt prinzipe/princeza??')
                     teks = `${body.slice(8)}`
                     if (teks.length > 10) return client.sendMessage(from, 'limite de 10 letras', text, {quoted: mek})
                     buff = await getBuffer(`https://docs-jojo.herokuapp.com/api/text3d?text=${teks}`, {method: 'get'})
@@ -383,7 +383,7 @@ case 'lofi':
 								fs.unlinkSync(media)
 							})
 					} else {
-						reply('Escolha a foto para pegar os txt dela ${prefix} >-<')
+						reply('Escolha A Foto Para Pegar Os Txt Dela ${prefix} >-<')
 					}
 					break
 				case 'stiker': 
@@ -428,7 +428,7 @@ case 'lofi':
 								console.log(`Error : ${err}`)
 								fs.unlinkSync(media)
 								tipe = media.endsWith('.mp4') ? 'video' : 'gif'
-								reply(`Yah gagal ;(, tente dnovo ^_^`)
+								reply(`Bem falhou ;(, tente dnovo ^_^`)
 							})
 							.on('end', function () {
 								console.log('Finish')
@@ -454,7 +454,7 @@ case 'lofi':
 					ranm = getRandom('.mp3')
 					rano = getRandom('.ogg')
 					dtt.length > 300
-					? reply('txt mto grande😤')
+					? reply('txt mto grande😤, max é 300')
 					: gtts.save(ranm, dtt, function() {
 						exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (err) => {
 							fs.unlinkSync(ranm)
@@ -483,7 +483,7 @@ case 'lofi':
 						if (args.length < 1) return client.sendMessage(from, 'qual nome da pessoa????', text, {quoted: mek})
 						let { user, stats } = await tiktod.getUserProfileInfo(args[0])
 						reply(mess.wait)
-						teks = `*ID* : ${user.id}\n*nome* : ${user.uniqueId}\n*Nick* : ${user.nickname}\n*seguidores* : ${stats.followerCount}\n*seguindo* : ${stats.followingCount}\n*posts da conta* : ${stats.videoCount}\n*Luv* : ${stats.heart}\n`
+						teks = `ID: ${user.id}\nNome: ${user.uniqueId}\nNick: ${user.nickname}\nSeguidores : ${stats.followerCount}\nSeguindo: ${stats.followingCount}\nPosts Da Conta : ${stats.videoCount}\nLuv: ${stats.heart}\n`
 						buffer = await getBuffer(user.avatarLarger)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: teks})
 					} catch (e) {
@@ -493,25 +493,25 @@ case 'lofi':
 					break
 				case 'clearall':
 				case 'limpar':
-					if (!isOwner) return reply('quem e tu?')
+					if (!isOwner) return reply('quem e tu? Só o criador pode usar;)')
 					anu = await client.chats.all()
 					client.setMaxListeners(25)
 					for (let _ of anu) {
 						client.deleteChat(_.jid)
 					}
-					reply('esta limpo ó deus grego  :)')
+					reply('esta limpo ó deus grego rsrs :)')
 					break
 			       case 'bloquear':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply(mess.only.ownerB)
 					client.blockUser (`${body.slice(7)}@c.us`, "add")
-					client.sendMessage(from, `membro bloqueado ${body.slice(7)}@c.us`, text)
+					client.sendMessage(from, `Membror bloqueaduಠ_ಠ ${body.slice(7)}@c.us`, text)
 					break
                     case 'desbloquear':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply(mess.only.ownerB)
 				    client.blockUser (`${body.slice(9)}@c.us`, "remove")
-					client.sendMessage(from, `membro desbloqueado ${body.slice(9)}@c.us`, text)
+					client.sendMessage(from, `Meinbru Desbloqueadu ${body.slice(9)}@c.us`, text)
 				break
 				case 'kitar': 
 				if (!isGroup) return reply(mess.only.group)
@@ -519,7 +519,7 @@ case 'lofi':
 				await client.client.leaveGroup(from, 'adeus...', groupId)
                     break
 				case 'bc': 
-					if (!isOwner) return reply(' so meu criador pode usar caraiu') 
+					if (!isOwner) return reply(' Só Meu Criador Pode Usar Caraiu') 
 					if (args.length < 1) return reply('.......')
 					anu = await client.chats.all()
 					if (isMedia && !mek.message.videoMessage || isQuotedImage) {
@@ -531,9 +531,9 @@ case 'lofi':
 						reply('transmissao feita')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `❮ msg de transmissao❯\n\n${body.slice(4)}`)
+							sendMess(_.jid, `❮ Msg De Transmissão❯\n\n${body.slice(4)}`)
 						}
-						reply('tm feita')
+						reply('Transm Feita')
 					}
 					break
 			   	case 'mudarfoto': 
@@ -569,7 +569,7 @@ case 'lofi':
 					    reply(`grupo aberto para membros`)
 						client.groupSettingChange(from, GroupSettingChange.messageSend, false)
 					} else if (args[0] === 'fechar') {
-						reply(`grupo fechado SOMENTE ADM'S MANDA MSGS`)
+						reply(`grupo fechado SOMENTE US ADM'S MANDA MSGS👺`)
 						client.groupSettingChange(from, GroupSettingChange.messageSend, true)
 					}
 					break
@@ -577,9 +577,10 @@ case 'lofi':
             case 'admin':
             case 'owner':
             case 'creator':
-            case 'nick':
+            case 'criador':
+            case 'keke':
                   client.sendMessage(from, {displayname: "NICKZZIN", vcard: vcard}, MessageType.contact, { quoted: mek})
-       client.sendMessage(from, 'Este é o número do meu criador hehe ',MessageType.text, { quoted: mek} )
+       client.sendMessage(from, 'Este é o número do meu criador ^-^ ',MessageType.text, { quoted: mek} )
            break    
            case 'setname':
            case 'mudarnome':
@@ -587,7 +588,7 @@ case 'lofi':
 			    if (!isGroupAdmins) return reply(mess.only.admin)
 				if (!isBotGroupAdmins) return reply(mess.only.Badmin)
                 client.groupUpdateSubject(from, `${body.slice(9)}`)
-                client.sendMessage(from, 'nome do grupo alterado cm sucesso', text, {quoted: mek})
+                client.sendMessage(from, 'Nome Do Grupo Alterado Com Sucesso', text, {quoted: mek})
                 break
                 case 'setdesc':
                 case 'mudardesc':
@@ -595,7 +596,7 @@ case 'lofi':
 			    if (!isGroupAdmins) return reply(mess.only.admin)
 				if (!isBotGroupAdmins) return reply(mess.only.Badmin)
                 client.groupUpdateDescription(from, `${body.slice(9)}`)
-                client.sendMessage(from, 'descricao trocada cum susexso', text, {quoted: mek})
+                client.sendMessage(from, 'Descrição Trocada Coun Susecsu', text, {quoted: mek})
                 break
            case 'demote':
            case 'rebaixar':
@@ -607,13 +608,13 @@ case 'lofi':
 					if (mentioned.length > 1) {
 						teks = ''
 						for (let _ of mentioned) {
-							teks += `nao mamou  o bonde direitinho perde ADM seu gay :\n`
+							teks += `Não Mamou O Bonde Direitinho Perde ADM Seu Gay :\n`
 							teks += `@_.split('@')[0]`
 						}
 						mentions(teks, mentioned, true)
 						client.groupDemoteAdmin(from, mentioned)
 					} else {
-						mentions(`nao mamou o bonde direitinho perde adm @${mentioned[0].split('@')[0]} seu gay`, mentioned, true)
+						mentions(`Não Mamou O Bonde Direitinho Perde Adm @${mentioned[0].split('@')[0]} seu gay`, mentioned, true)
 						client.groupDemoteAdmin(from, mentioned)
 					}
 					break
@@ -627,13 +628,13 @@ case 'lofi':
 					if (mentioned.length > 1) {
 						teks = ''
 						for (let _ of mentioned) {
-							teks += `novo adm fml esse mamou o bonde pra ser ADM :\n`
+							teks += `Ovo Adm Fml Esse Mamou O Bonde Pra Ser ADM :\n`
 							teks += `@_.split('@')[0]`
 						}
 						mentions(teks, mentioned, true)
 						client.groupMakeAdmin(from, mentioned)
 					} else {
-						mentions(`novo adm fml sem escandalo @${mentioned[0].split('@')[0]} esse mamou o bonde pra ser ADM`, mentioned, true)
+						mentions(`Novo Adm Fml Sem Escândalu @${mentioned[0].split('@')[0]} Esse Mamou O Bonde Pra Ser ADM`, mentioned, true)
 						client.groupMakeAdmin(from, mentioned)
 					}
 					break	
@@ -648,13 +649,13 @@ case 'lofi':
 					if (mentioned.length > 1) {
 						teks = ''
 						for (let _ of mentioned) {
-							teks += `removi mermo fodassi 🏃 :\n`
+							teks += `Removi Mermo Fodazi🏃 :\n`
 							teks += `@_.split('@')[0]`
 						}
 						mentions(teks, mentioned, true)
 						client.groupRemove(from, mentioned)
 					} else {
-						mentions(`removi mermo @${mentioned[0].split('@')[0]} fodassi🏃`, mentioned, true)
+						mentions(`Removir Mermu @${mentioned[0].split('@')[0]} Fodaçi🏃`, mentioned, true)
 						client.groupRemove(from, mentioned)
 					}
 					break
@@ -662,7 +663,7 @@ case 'lofi':
 				case 'listaadms':
 				case 'adms':
 					if (!isGroup) return reply(mess.only.group)
-					teks = `adms do grupo *${groupMetadata.subject}*\nadms : ${groupAdmins.length}\n\n`
+					teks = `Adms Do Grupor *${groupMetadata.subject}*\nAdms : ${groupAdmins.length}\n\n`
 					no = 0
 					for (let admon of groupAdmins) {
 						no += 1
@@ -679,7 +680,7 @@ case 'lofi':
 					ran = getRandom('.png')
 					exec(`ffmpeg -i ${media} ${ran}`, (err) => {
 						fs.unlinkSync(media)
-						if (err) return reply('algo de erro ;(, tente dnovo dps ^_^')
+						if (err) return reply('Algo De Errado ;(, Tente Denovo Dps ^_^')
 						buffer = fs.readFileSync(ran)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'tchau entt '})
 						fs.unlinkSync(ran)
@@ -693,13 +694,13 @@ case 'lofi':
 						if (isNsfw) return reply('ativado !!')
 						nsfw.push(from)
 						fs.writeFileSync('./src/nsfw.json', JSON.stringify(nsfw))
-						reply('❬ sucesso ❭')
+						reply('Sucesso')
 					} else if (Number(args[0]) === 0) {
 						nsfw.splice(from, 1)
 						fs.writeFileSync('./src/nsfw.json', JSON.stringify(nsfw))
-						reply('❬ sucesso❭')
+						reply('Sucesso')
 					} else {
-						reply(' *use o 0 para desativar e o 1 para ativar* \nexemplo: nsfw 1')
+						reply(' Use O 0 Para Desativar E O 1 Para Ativar* \nexemplo: nsfw 1')
 					}
 					break
 				case 'welcome':
@@ -717,15 +718,15 @@ case 'lofi':
 					} else if (Number(args[0]) === 0) {
 						welkom.splice(from, 1)
 						fs.writeFileSync('./src/welkom.json', JSON.stringify(welkom))
-						reply('❬ pronto ❭ ')
+						reply('Prontinho')
 					} else {
-						reply(' *use 1 para ativar ou 0 para desativar* \n *exemplo: ${prefix}welcome 1*')
+						reply(' Use 1 Para Ativar Ou 0 Para Desativar \n Exemplo: ${prefix}welcome 1*')
 					}
 				case 'clone':
 				case 'clonar':
 					if (!isGroup) return reply(mess.only.group)
-					if (!isOwner) return reply(' *quem e tu? ?') 
-					if (args.length < 1) return reply(' *TAG do membro clonada!* ')
+					if (!isOwner) return reply(' Quem É Tu? ?') 
+					if (args.length < 1) return reply(' TAG do membro clonada! ')
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag cvk')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
 					let { jid, id, notify } = groupMembers.find(x => x.jid === mentioned)
@@ -733,9 +734,9 @@ case 'lofi':
 						pp = await client.getProfilePicture(id)
 						buffer = await getBuffer(pp)
 						client.updateProfilePicture(botNumber, buffer)
-						mentions(`Foto profile Berhasil di perbarui menggunakan foto profile @${id.split('@')[0]}`, [jid], true)
+						mentions(`Foto do perfil atualizada com sucesso@${id.split('@')[0]}`, [jid], true)
 					} catch (e) {
-						reply(' *falhei ;(, tente mais tarde ^_^* ')
+						reply(' Falhei ;(, tente mais tarde ^_^ ')
 					}
 					break
 				case 'wait':
@@ -750,7 +751,7 @@ case 'lofi':
 							reply(err)
 						})
 					} else {
-						reply(' *encontrei isso* ')
+						reply(' Encontrei Izu ')
 					}
 					break
 				default:
