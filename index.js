@@ -161,9 +161,9 @@ client.on('group-participants-update', async (anu) => {
 				},
 				only: {
 					group: '👺 COMANDO SÓ PODE SER EXECUTADO EM GRUPOS👺 ',
-					ownerG: 👺 COMANDO EXCLUSIVO PARA O PROPRIETÁRIO DO BOT.👺 ',
+					ownerG: '👺 COMANDO EXCLUSIVO PARA O PROPRIETÁRIO DO BOT.👺 ',
 					ownerB: '👺  COMANDO EXCLUSIVO PARA O PROPRIETÁRIO DO BOT.👺 ',
-					admin: ' 👺  COMANDO PERMITIDO SOMENTE PARA ADMS 👺 ',
+					admin: '👺  COMANDO PERMITIDO SOMENTE PARA ADMS 👺 ',
 					Badmin: '👺 O BOT PRECISA SER ADEMAR ;3 '
 				}
 			}
