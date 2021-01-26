@@ -79,11 +79,12 @@ const client = new WAConnection()
 
 client.on('qr', qr => {
    qrcode.generate(qr, { small: true })
-   console.log(`[ ${time} ] QR code is ready, subrek dulu yak ambipi team`)
+   console.log(`[ ${time} ] QR code Escaneado, NICKZZIN DOMINA KRLH`)
 })
 
 client.on('credentials-updated', () => {
-   const authInfo = client.base64EncodedAuthInfo()
+   const authInfo = client.base64Encoded
+   Consol
    console.log(`credentials updated!`)
 
    fs.writeFileSync('./session.json', JSON.stringify(authInfo, null, '\t'))
@@ -152,18 +153,18 @@ client.on('group-participants-update', async (anu) => {
 			const isCmd = body.startsWith(prefix)
 
 			mess = {
-				wait: '🥀Pera ai, blz ?🥀',
+				wait: '👺Pera ai, blz ?👺',
 				success: '️Pronto meu prinzipe/princeza🖤',
 				error: {
-					stick: '🩸Eu falhei :( diculpa🩸',
-					Iv: 'Diculpa, o link está inválido☹️'
+					stick: '👺Eu falhei :( diculpa👺',
+					Iv: 'Diculpa, o link está inválido👺'
 				},
 				only: {
-					group: '❗ COMANDO SÓ PODE SER EXECUTADO EM GRUPOS❗ ',
-					ownerG: '❗COMANDO EXCLUSIVO PARA O PROPRIETÁRIO DO BOT.❗ ',
-					ownerB: '❗  COMANDO EXCLUSIVO PARA O PROPRIETÁRIO DO BOT.❗ ',
-					admin: ' ⚠️  COMANDO PERMITIDO SOMENTE PARA ADMS ⚠️ ',
-					Badmin: '❗O BOT PRECISA SER ADEMAR ;3 '
+					group: '👺 COMANDO SÓ PODE SER EXECUTADO EM GRUPOS👺 ',
+					ownerG: 👺 COMANDO EXCLUSIVO PARA O PROPRIETÁRIO DO BOT.👺 ',
+					ownerB: '👺  COMANDO EXCLUSIVO PARA O PROPRIETÁRIO DO BOT.👺 ',
+					admin: ' 👺  COMANDO PERMITIDO SOMENTE PARA ADMS 👺 ',
+					Badmin: '👺 O BOT PRECISA SER ADEMAR ;3 '
 				}
 			}
 
